@@ -31,7 +31,7 @@ export default class SoftBreak extends Plugin {
 
 		// Build converter from view to model for data pipeline.
 		buildViewConverter().for( data.viewToModel )
-			.fromElement( { name: 'br' } )
+			.fromElement( 'br' )
 			.toElement( 'softLineBreak' );
 
 		editing.view.addObserver( SoftBreakObserver );

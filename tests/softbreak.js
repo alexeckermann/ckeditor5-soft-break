@@ -95,11 +95,11 @@ describe( 'SoftBreak', () => {
 
 		it( 'view should convert to empty break tags', () => {
 			setModelData( document, '<paragraph>foo<softLineBreak></softLineBreak>bar</paragraph>' );
-			expect( getViewData( viewDocument, { withoutSelection: true } ) ).to.equal( '<p>foo<br />bar</p>' );
+			expect( editor.getData() ).to.equal( '<p>foo<br>bar</p>' );
 		} );
 
 		it( 'model should convert to soft line breaks', () => {
-			setViewData( viewDocument, '<p>foo<br />bar</p>' );
+			editor.setData('<p>foo<br />bar</p>');
 			expect( getModelData( document, { withoutSelection: true } ) ).to.equal( '<paragraph>foo<softLineBreak></softLineBreak>bar</paragraph>' );
 		} );
 

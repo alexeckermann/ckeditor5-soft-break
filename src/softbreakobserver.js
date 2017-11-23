@@ -8,7 +8,7 @@ export default class SoftBreakObserver extends Observer {
 
 		document.on( 'keydown', ( evt, data ) => {
 			if ( this.isEnabled && data.keyCode == keyCodes.enter && data.shiftKey ) {
-				document.fire( 'softLineBreak' );
+				document.fire( 'softLineBreak', new DomEventData( document, data.domEvent ) );
 				evt.stop();
 			}
 		}, { priority: 'high' } );

@@ -12,6 +12,12 @@
     "@ckeditor/ckeditor5-utils": "^1.0.0-alpha.2"
   },
   "devDependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^1.0.0-alpha.2",
+    "@ckeditor/ckeditor5-editor-classic": "^1.0.0-alpha.2",
+    "@ckeditor/ckeditor5-heading": "^1.0.0-alpha.2",
+    "@ckeditor/ckeditor5-typing": "^1.0.0-alpha.2",
+    "@ckeditor/ckeditor5-undo": "^1.0.0-alpha.2",
+    "@ckeditor/ckeditor5-enter": "^1.0.0-alpha.2",
     "@ckeditor/ckeditor5-dev-utils": "",
     "@ckeditor/ckeditor5-dev-env": "",
     "@ckeditor/ckeditor5-dev-tests": "^9.0.0",
@@ -34,6 +40,7 @@
     "src"
   ],
   "scripts": {
-    "test": "node --max_old_space_size=4096 ./node_modules/.bin/ckeditor5-dev-tests"
+    "test": "node --max_old_space_size=4096 ./node_modules/.bin/ckeditor5-dev-tests",
+    "test:manual": "node --max_old_space_size=4096 ./node_modules/.bin/ckeditor5-dev-tests-manual"
   }
 }

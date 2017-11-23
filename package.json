@@ -1,0 +1,39 @@
+{
+  "name": "ckeditor5-soft-break",
+  "version": "0.1.0",
+  "description": "Soft break feature for CKEditor 5.",
+  "keywords": [
+    "ckeditor5",
+    "ckeditor5-plugin"
+  ],
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^1.0.0-alpha.2",
+    "@ckeditor/ckeditor5-engine": "^1.0.0-alpha.2",
+    "@ckeditor/ckeditor5-utils": "^1.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-utils": "",
+    "@ckeditor/ckeditor5-dev-env": "",
+    "@ckeditor/ckeditor5-dev-tests": "^9.0.0",
+    "@ckeditor/ckeditor5-ui": "^1.0.0-alpha.2"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
+  "contributors": [
+    "Alex Eckermann <alex@alexeckermann.com> (https://twitter.com/alexeckermann)"
+  ],
+  "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
+  "bugs": "https://github.com/alexeckermann/ckeditor5-soft-break/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexeckermann/ckeditor5-soft-break.git"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --max_old_space_size=4096 ./node_modules/.bin/ckeditor5-dev-tests"
+  }
+}
